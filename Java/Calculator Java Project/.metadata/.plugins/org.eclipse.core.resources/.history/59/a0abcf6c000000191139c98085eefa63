@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ScientificCalculator;
+
+
+public class CalculorThreaded {
+	
+	public CalculorThreaded() {
+		
+	}
+
+
+public double doOperation (String opCode , double num1 , double num2) {
+        switch (opCode) {
+            case "+":
+                return num1 + num2 ;
+            case "-":
+                return num1 - num2;
+            case "*":
+                return num1 * num2;
+            case "/":
+                return num1 / num2; 
+            default :
+                return -1;     
+        }
+    }
+    
+    
+}

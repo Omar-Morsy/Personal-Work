@@ -1,0 +1,49 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ScientificCalculator;
+
+
+public class CalculorThreaded {
+
+    //Sum 
+    public int sum (int num1 , int num2) {
+        return num1+num2;
+    }
+    
+    //sub 
+    public int sub (int num1 , int num2) {
+        return num1-num2;
+    }
+    
+    //mul 
+    public int mul (int num1 , int num2) {
+        return num1*num2;
+    }
+    //div 
+    public int div (int num1 , int num2) {
+        return num1/num2;
+    }
+    
+    
+    //operation 
+
+public int doOperation (String opCode , int num1 , int num2) {
+        switch (opCode) {
+            case "+":
+                return this.sum(num1, num2);
+            case "-":
+                return this.sub(num1, num2);
+            case "*":
+                return this.mul(num1, num2);
+            case "/":
+                return this.div(num1, num2);    
+            default :
+                return -1;     
+        }
+    }
+    
+    
+}
