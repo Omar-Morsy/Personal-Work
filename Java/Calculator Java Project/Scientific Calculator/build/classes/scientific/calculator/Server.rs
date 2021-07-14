@@ -1,2 +1,0 @@
-scientific.calculator.Serverthread
-scientific.calculator.Server
